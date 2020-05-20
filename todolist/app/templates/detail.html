@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}">
+  <title>to-do-list-detail</title>
+</head>
+<body>
+  <div class="title">
+    <h1>detail of the assignment</h1>
+  </div>
+  <div class="total">
+    <div class="top">
+      <h3>해야할 일</h3>
+      <span>{{ post.title }}</span>
+    </div>
+    <div class="middle">
+      <h3>세부 사항</h3>
+      <span>{{ post.content }}</span>
+    </div>
+    <div class="bottom">
+      <h3>마감 기한</h3>
+      <span>{{ post.deadline }}</span>
+    </div>
+  </div>
+  <br>
+  <div class="button">
+    <div class="home">
+      <a href="{% url 'home' %}">홈으로</a>
+    </div>
+    <br>
+    <div class="update">
+      <a href="{% url 'edit' post.pk %}">수정하기</a>
+    </div>
+    <br>
+    <div class="delete">
+      <a href="{% url 'delete' post.pk %}">삭제하기</a>
+    </div>
+  </div>
+  
+</body>
+</html>
