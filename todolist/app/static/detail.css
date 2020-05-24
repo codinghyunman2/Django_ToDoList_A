@@ -55,3 +55,8 @@ body {
   background-color: white;
   margin: 0px auto;
 }
+.comment {
+  position: relative;
+  left: 5rem;
+  bottom: 26rem;
+}
