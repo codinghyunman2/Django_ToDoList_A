@@ -34,29 +34,20 @@ body {
   position: relative;
   left: 7.3rem;
 }
-.home {
-  width: 9%;
-  text-align: center;
-  border: 3px solid #519D9E;
-  background-color: white;
-  margin: 0px auto;
-}
 .update {
   width: 9%;
   text-align: center;
-  border: 3px solid #519D9E;
   background-color: white;
   margin: 0px auto;
 }
 .delete {
   width: 9%;
   text-align: center;
-  border: 3px solid #519D9E;
   background-color: white;
   margin: 0px auto;
 }
 .comment {
   position: relative;
   left: 5rem;
-  bottom: 26rem;
+  bottom: 21rem;
 }
